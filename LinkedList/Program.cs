@@ -78,22 +78,26 @@ public class MyLinkedList<T> : IEnumerable<Node<T>>
     public void Remove(Node<T> node)
     {
         var current = first;
+
         if (node == null)
-        {
-            throw new ArgumentNullException(nameof(node));
-        }
+            throw new ArgumentNullException();
         else if (current == node)
         {
             first = first.Next;
             Count--;
             return;
         }
-        while (current.Next != node)
+        while (current != null)
         {
+            if (current.Next.Equals(node))
+            {
+                current.Next = current.Next.Next;
+                Count--;
+                return;
+            }
             current = current.Next;
         }
-        current.Next = null;
-        Count--;
+        throw new InvalidOperationException();
     }
     public bool Remove(T data)
     {
