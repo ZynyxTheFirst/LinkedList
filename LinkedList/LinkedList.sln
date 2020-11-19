@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList.csproj", "{1CD1647E-1961-4F49-8C57-0E9566A2B5D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListUnitTest", "..\LinkedListUnitTest\LinkedListUnitTest.csproj", "{98D12110-9F7B-4A3D-9396-782FC4C69702}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectLinkList", "ProjectLinkList", "{81912D17-66F1-4123-9E86-1A52AC875F73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CD1647E-1961-4F49-8C57-0E9566A2B5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD1647E-1961-4F49-8C57-0E9566A2B5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD1647E-1961-4F49-8C57-0E9566A2B5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD1647E-1961-4F49-8C57-0E9566A2B5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D12110-9F7B-4A3D-9396-782FC4C69702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D12110-9F7B-4A3D-9396-782FC4C69702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D12110-9F7B-4A3D-9396-782FC4C69702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D12110-9F7B-4A3D-9396-782FC4C69702}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1CD1647E-1961-4F49-8C57-0E9566A2B5D5} = {81912D17-66F1-4123-9E86-1A52AC875F73}
+		{98D12110-9F7B-4A3D-9396-782FC4C69702} = {81912D17-66F1-4123-9E86-1A52AC875F73}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33CC074B-7909-4688-ACC4-F16280C5E7B3}
+	EndGlobalSection
+EndGlobal
