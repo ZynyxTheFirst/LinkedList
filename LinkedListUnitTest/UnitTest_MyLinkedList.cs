@@ -47,6 +47,7 @@ namespace LinkedListUnitTest
             //Assert
             Assert.AreEqual(1, list[0].Data);
         }
+
         [TestMethod]
         public void TestClear()
         {
@@ -61,6 +62,7 @@ namespace LinkedListUnitTest
             Assert.IsNull(list[0]);
             Assert.AreEqual(list.Count, 0);
         }
+
         [TestMethod]
         public void TestContains()
         {
@@ -74,6 +76,7 @@ namespace LinkedListUnitTest
             Assert.IsTrue(list.Contains(2));
             Assert.IsFalse(list.Contains(3));
         }
+
         [TestMethod]
         public void TestFind()
         {
@@ -89,6 +92,7 @@ namespace LinkedListUnitTest
             Assert.AreEqual(node, test_found);
             Assert.IsNull(list.Find(4));
         }
+
         [TestMethod]
         public void TestRemoveNode()
         {
@@ -102,6 +106,7 @@ namespace LinkedListUnitTest
             //Assert
             Assert.AreEqual(1, list.Count);
         }
+
         [TestMethod]
         public void TestRemove()
         {
@@ -111,7 +116,6 @@ namespace LinkedListUnitTest
             
             list.AddFirst(2);
 
-
             //Act
             list.Remove(3);
 
@@ -120,6 +124,7 @@ namespace LinkedListUnitTest
             Assert.AreEqual(false, list.Contains(3));
 
         }
+
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         public void TestRemoveArgumentNullException()
@@ -128,8 +133,10 @@ namespace LinkedListUnitTest
 
             //Act
             list.Remove(null);
+
             //Assert
         }
+
         [TestMethod]
         public void TestGetEnumerator()
         {
@@ -146,6 +153,7 @@ namespace LinkedListUnitTest
             i.MoveNext();
             Assert.AreEqual(i.Current.Data, 2);
         }
+
         [TestMethod]
         public void TestGet()
         {
@@ -162,6 +170,7 @@ namespace LinkedListUnitTest
             Assert.AreEqual(test_current, node);
             Assert.IsNull(test_null);
         }
+
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void TestGetArgumentOutOfRangeException()
@@ -172,8 +181,5 @@ namespace LinkedListUnitTest
             list.Get(-1);
             //Assert
         }
-
-
-
     }
 }
